@@ -1,0 +1,71 @@
+body {
+  background-color: rgb(234, 234, 234) !important;
+}
+
+.ui.inverted.top.fixed.menu {
+  background-image: linear-gradient(
+    135deg,
+    rgb(220, 28, 19) 0%,
+    rgb(234, 76, 70) 69%,
+    rgb(240, 116, 112) 89%
+  ) !important;
+}
+
+/*home page styles*/
+
+.masthead {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(
+    135deg,
+    rgb(220, 28, 19) 0%,
+    rgb(234, 76, 70) 69%,
+    rgb(240, 116, 112) 89%
+  ) !important;
+  height: 100vh;
+}
+
+.masthead .ui.menu .ui.button,
+.ui.menu a.ui.inverted.button {
+  margin-left: 0.5em;
+}
+
+.masthead h1.ui.header {
+  font-size: 4em;
+  font-weight: normal;
+}
+
+.masthead h2 {
+  font-size: 1.7em;
+  font-weight: normal;
+}
+
+.ui.positive.button.addBook {
+  margin-top: 20px;
+  margin-left: 837px;
+}
+
+.ui.selection.dropdown.record {
+  position: inherit;
+}
+
+.recordHeader {
+  background-color: brown;
+  color: white;
+}
+
+.returnedOnTime {
+  background: green;
+  color: white;
+}
+
+.returnedLately {
+  background: red;
+  color: white;
+}
+
+.ui.celled.table {
+  position: initial;
+}
+
+/*end home page styles*/
