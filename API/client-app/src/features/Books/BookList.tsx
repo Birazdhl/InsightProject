@@ -50,8 +50,9 @@ const BookList: React.FC = () => {
 
 
 
-                <Segment.Group key={books.id}>
-                    {(books.name === user!.username || books.name === null) &&
+                <div key={books.id}>
+                    {((books.name === user!.username || books.name === null) && (books.requestedBy === user!.username || books.requestedBy === null)) ?
+
                         <Segment>
                             <Item.Group>
                                 <Item>
@@ -98,12 +99,13 @@ const BookList: React.FC = () => {
                             </Item.Group>
                         </Segment>
 
+                        : ''
+
                     }
-                </Segment.Group>
+                </div>
 
 
             ))}
-
 
         </div>
     )

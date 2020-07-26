@@ -24,9 +24,9 @@ namespace Application.Repo
         public void SendMail(SendEmailViewModel email)
         {
 
-            var fromAddress = new MailAddress("usermail@gmail.com", "Biraz Dahal"); // use gmail
+            var fromAddress = new MailAddress("birazcodemail@gmail.com", "Biraz Dahal"); // use gmail
             var toAddress = new MailAddress(email.requestorEmail, email.requestorName);
-            const string fromPassword = "pa$$w0rd"; // use password
+            const string fromPassword = "myPa$$w0rd"; // use password
             string subject = email.subject;
             string body = email.Message;
 
