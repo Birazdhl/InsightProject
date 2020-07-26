@@ -103,8 +103,8 @@ namespace Application.Repo
                 book.issuedBy = book.requestedBy;
                 book.requestedBy = null;
 
-                sendEmail.subject = "Book Request Accepted /n";
-                sendEmail.Message = sendEmail.requestorName + " , Your request for the book " + 
+                sendEmail.subject = "Book Request Accepted ";
+                sendEmail.Message = sendEmail.requestorName + " , \n Your request for the book " + 
                                     reqRejViewModel.bookName + "is Approved" +
                                     "The Submission Deadline for the Book is " + book.returnDate;
             }
@@ -119,8 +119,8 @@ namespace Application.Repo
                 book.issuedBy = null;
                 book.requestedBy = null;
 
-                sendEmail.subject = "Book Request Rejected";
-                sendEmail.Message = sendEmail.requestorName + " , Your request for the book " + reqRejViewModel.bookName + "is Rejected";
+                sendEmail.subject = "Book Request Rejected ";
+                sendEmail.Message = sendEmail.requestorName + " , \n Your request for the book " + reqRejViewModel.bookName + " is Rejected. ";
             }
 
             var success = _dataContext.SaveChanges() > 0;
